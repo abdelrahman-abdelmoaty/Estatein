@@ -1,9 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Image1 from "@images/buildings/image(1).png";
 import Image2 from "@images/buildings/image(2).png";
 import Image3 from "@images/buildings/image(3).png";
-import { AbstractDesign, ArrowLeft, ArrowRight } from "@/components/SVGs";
 import SectionLayout from "@/components/SectionLayout";
 import CustomLink from "@/components/ui/CustomLink";
 
