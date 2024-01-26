@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="rounded-xl border border-grey-15 flex items-center gap-2.5 py-[14px] px-[20px] dt:py-[18px] dt:px-[24px] ">
             <MailBox className="w-5 h-5 dt:w-6 dt:h-6" />
-            <input type="text" placeholder="Enter Your Email" className="flex-1 bg-transparent font-medium text-[14px] dt:text-[18px] outline-none" />
+            <input type="text" placewholder="Enter Your Email" className="flex-1 bg-transparent font-medium text-[14px] dt:text-[18px] outline-none" />
             <PaperPlane className="w-6 h-6 dt:w-7.5 dt:h-7.5" />
           </div>
         </div>

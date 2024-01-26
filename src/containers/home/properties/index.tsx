@@ -1,7 +1,7 @@
 import React from "react";
-import Image1 from "@images/buildings/image(1).png";
-import Image2 from "@images/buildings/image(2).png";
-import Image3 from "@images/buildings/image(3).png";
+import Image1 from "@images/buildings/image1.png";
+import Image2 from "@images/buildings/image2.png";
+import Image3 from "@images/buildings/image3.png";
 import SectionLayout from "@/components/SectionLayout";
 import CustomLink from "@/components/ui/CustomLink";
 
