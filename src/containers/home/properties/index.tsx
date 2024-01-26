@@ -67,9 +67,11 @@ const Card = ({ property: { title, desc, img, features, price } }: { property: P
           </p>
         </div>
         <div className="flex gap-[6px] dt:gap-2.5">
-          {features.slice(0, 3).map((f) => {
+          {features.slice(0, 3).map((f, idx) => {
             return (
-              <div className="font-medium rounded-[28px] text-[14px] dt:text-[18px] py-[6px] dt:py-[8px] px-[14px] border border-grey-15">{f}</div>
+              <div key={idx} className="font-medium rounded-[28px] text-[14px] dt:text-[18px] py-[6px] dt:py-[8px] px-[14px] border border-grey-15">
+                {f}
+              </div>
             );
           })}
         </div>
