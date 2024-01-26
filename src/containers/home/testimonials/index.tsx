@@ -11,7 +11,7 @@ const Testimonials = () => {
       p="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
       btn="View All Testimonials"
     >
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-[20px] dt:gap[30px]">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-[20px] dt:gap[30px] ">
         {TESTIMONIALS.slice(0, 3).map((t, idx) => (
           <Card key={idx} testimonial={t} />
         ))}
