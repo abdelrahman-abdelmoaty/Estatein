@@ -1,8 +1,8 @@
 import { Star } from "@/components/SVGs";
 import SectionLayout from "@/components/SectionLayout";
 import Image from "next/image";
-import profile1 from "@images/profiles/profile.png";
-import profile2 from "@images/profiles/profile1.png";
+import profile1 from "@images/profiles/profile1.png";
+import profile2 from "@images/profiles/profile2.png";
 
 const Testimonials = () => {
   return (
