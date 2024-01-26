@@ -14,7 +14,7 @@ export default function NavLink({ children, ...props }: NavLinkProps) {
     <Link
       className={cn(
         "border border-grey-15 hover:bg-grey-08 transition py-[12px] px-[20px] dt:py-[14px] dt:px-[24px] font-medium rounded-[10px] text-[14px] dt:text-[18px]",
-        {
+         {
           "bg-grey-08": pathname === props.href,
         }
       )}
