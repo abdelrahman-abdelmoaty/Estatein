@@ -3,7 +3,6 @@ import SectionLayout from "@/components/SectionLayout";
 import Image from "next/image";
 import profile1 from "@images/profiles/profile.png";
 import profile2 from "@images/profiles/profile1.png";
-import profile3 from "@images/profiles/profile.png";
 
 const Testimonials = () => {
   return (
@@ -43,7 +42,7 @@ const TESTIMONIALS: Testimonial[] = [
   {
     title: "Trusted Advisors",
     desc: "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!",
-    authorImg: profile3.src,
+    authorImg: profile1.src,
     authorName: "John Mans",
     authorAddress: "USA, Nevada",
   },
