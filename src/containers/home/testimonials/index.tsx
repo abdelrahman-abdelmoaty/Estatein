@@ -1,12 +1,13 @@
 import { Star } from "@/components/SVGs";
 import SectionLayout from "@/components/SectionLayout";
 import Image from "next/image";
-import profile1 from "@images/profiles/profile1.png";
+import profile1 from "@images/profiles/profile.png";
 import profile2 from "@images/profiles/profile1.png";
 
 const Testimonials = () => {
   return (
     <SectionLayout
+      key={3}
       h1="What Our Clients Say"
       p="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
       btn="View All Testimonials"

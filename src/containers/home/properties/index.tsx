@@ -4,10 +4,12 @@ import Image2 from "@images/buildings/image2.png";
 import Image3 from "@images/buildings/image3.png";
 import SectionLayout from "@/components/SectionLayout";
 import CustomLink from "@/components/ui/CustomLink";
+import Image from "next/image";
 
 const Properties = () => {
   return (
     <SectionLayout
+      key={1}
       h1="Featured Properties"
       p="Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click 'View Details' for more information."
       btn="View All Properties"
@@ -51,8 +53,8 @@ type Property = { title: string; desc: string; img: string; features: string[]; 
 const Card = ({ property: { title, desc, img, features, price } }: { property: Property }) => {
   return (
     <div className="odd:hidden md:odd:block border border-grey-15 p-[30px] dt:p-10 rounded-xl">
-      <div className="w-full mb-[16px]  xl:mb-[20px] dt:mb-[30px]">
-        <img src={img} alt={title} className="w-full rounded-base" />
+      <div className="w-full h-auto mb-[16px] xl:mb-[20px] dt:mb-[30px] relative">
+        <Image src={img} alt={title} className="w-full rounded-base" width={432} height={318} />
       </div>
       <div className="flex flex-col gap-6 dt:gap-[30px]">
         <div>

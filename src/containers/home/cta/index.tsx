@@ -10,7 +10,7 @@ const CTA = () => {
         <div className="flex-1 flex flex-col gap-[10px] dt:gap-[14px]">
           <h4 className="font-semibold text-[28px] xl:text-[38px] dt:text-[48px]">Start Your Real Estate Journey Today</h4>
           <p className="font-medium text-[14px] xl:text-[16px] dt:text-[18px]">
-            Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice,
+            Your dream property is just a click away. Whether you&aposre looking for a new home, a strategic investment, or expert real estate advice,
             Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available
             properties or get in touch with our team for personalized assistance.
           </p>

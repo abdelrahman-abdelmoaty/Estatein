@@ -6,6 +6,7 @@ import React from "react";
 const Questions = () => {
   return (
     <SectionLayout
+      key={2}
       h1="Frequently Asked Questions"
       p="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
       btn="View All FAQ’s"
