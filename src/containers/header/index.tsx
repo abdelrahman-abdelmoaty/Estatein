@@ -5,6 +5,7 @@ import Link from "next/link";
 import { HamburgerBurger, XMark } from "@/components/SVGs";
 import NavLink from "@/components/ui/NavLink";
 import CustomLink from "@/components/ui/CustomLink";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
@@ -53,9 +54,7 @@ const Header = () => {
           >
             Contact Us
           </CustomLink>
-          <button className="transition hover:opacity-80 md:hidden">
-            <HamburgerBurger />
-          </button>
+          <MobileMenu />
         </nav>
       </div>
     </header>

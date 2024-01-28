@@ -14,7 +14,7 @@ const Testimonials = () => {
       linkLabel="View All Testimonials"
       href="#"
     >
-      <div className="dt:gap[30px] grid gap-[20px] md:grid-cols-2 xl:grid-cols-3 ">
+      <div className="dt:gap[30px] grid gap-[20px] sm:grid-cols-2 lg:grid-cols-3 ">
         {TESTIMONIALS.slice(0, 3).map((t, idx) => (
           <Card key={idx} testimonial={t} />
         ))}
@@ -63,7 +63,7 @@ const Card = ({
   testimonial: Testimonial;
 }) => {
   return (
-    <div className="flex flex-col justify-between gap-[30px] rounded-base border border-grey-15 p-[40px] odd:hidden md:odd:flex dt:gap-[40px] dt:p-[50px]">
+    <div className="flex flex-col justify-between gap-[30px] rounded-base border border-grey-15 p-[40px] odd:hidden sm:odd:flex dt:gap-[40px] dt:p-[50px]">
       <div className="flex items-center gap-2 dt:gap-2.5">
         <div className="rounded-full border border-grey-15 p-[9px] text-[#FFE500] dt:p-2.5">
           <Star className="h-4 w-4 dt:h-5 dt:w-5 " />

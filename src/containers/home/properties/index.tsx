@@ -16,7 +16,7 @@ const Properties = () => {
       linkLabel="View All Properties"
       href="#"
     >
-      <div className="dt:gap[30px] grid gap-[20px] md:grid-cols-2 xl:grid-cols-3">
+      <div className="dt:gap[30px] grid gap-[20px] sm:grid-cols-2 lg:grid-cols-3">
         {PROPERTIES.slice(0, 3).map((p, idx) => (
           <Card key={idx} property={p} />
         ))}
@@ -64,7 +64,7 @@ const Card = ({
   property: Property;
 }) => {
   return (
-    <div className="rounded-xl border border-grey-15 p-[30px] odd:hidden md:odd:block dt:p-10">
+    <div className="rounded-xl border border-grey-15 p-[30px] odd:hidden sm:odd:block dt:p-10">
       <div className="relative mb-[16px] h-auto w-full xl:mb-[20px] dt:mb-[30px]">
         <Image
           src={img}

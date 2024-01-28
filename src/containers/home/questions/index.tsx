@@ -12,7 +12,7 @@ const Questions = () => {
       linkLabel="View All FAQ’s"
       href="#"
     >
-      <div className="dt:gap[30px] grid gap-[20px] md:grid-cols-2 xl:grid-cols-3">
+      <div className="dt:gap[30px] grid gap-[20px] sm:grid-cols-2 lg:grid-cols-3">
         {QUESTIONS.slice(0, 3).map((q, idx) => (
           <Card key={idx} question={q} />
         ))}
@@ -52,7 +52,7 @@ const Card = ({
   question: Question;
 }) => {
   return (
-    <div className="flex flex-col justify-between gap-[24px] rounded-base border border-grey-15 p-[40px] odd:hidden md:odd:flex dt:gap-[30px] dt:p-[50px]">
+    <div className="flex flex-col justify-between gap-[24px] rounded-base border border-grey-15 p-[40px] odd:hidden sm:odd:flex dt:gap-[30px] dt:p-[50px]">
       <p className="mb-[10px] flex-1 text-[20px] font-semibold dt:mb-[14px] dt:text-[24px]">
         {question}
       </p>
