@@ -8,40 +8,52 @@ import CustomLink from "@/components/ui/CustomLink";
 
 const Header = () => {
   return (
-    <header className="bg-grey-10 relative z-50">
+    <header className="relative z-50 bg-grey-10">
       <div className="relative overflow-hidden">
-        <div className="container flex items-center justify-start md:justify-center pt-10 pb-5 md:py-3.5 dt:py-4.5">
-          <div className="text-xs md:text-sm dt:text-lg  flex items-center gap-1 md:gap-2 dt:gap-2.5 relative z-20">
+        <div className="container flex items-center justify-start pb-5 pt-10 md:justify-center md:py-3.5 dt:py-4.5">
+          <div className="relative z-20 flex  items-center gap-1 text-xs md:gap-2 md:text-sm dt:gap-2.5 dt:text-lg">
             <h1>✨Discover Your Dream Property with Estatein</h1>
-            <a href="#" className="capitalize underline font-medium cursor-pointer hover:opacity-80 transition">
+            <a
+              href="#"
+              className="cursor-pointer font-medium capitalize underline transition hover:opacity-80"
+            >
               Learn More
             </a>
           </div>
-          <div className="absolute top-1/2 -translate-y-1/2 left-0 h-[1046px] w-screen md:w-[1566px] dt:w-screen opacity-30 z-10">
+          <div className="absolute left-0 top-1/2 z-10 h-[1046px] w-screen -translate-y-1/2 opacity-30 md:w-[1566px] dt:w-screen">
             <Image src={abstractDesgin} alt="abstract design" fill />
           </div>
-          <button className=" bg-white bg-opacity-10 absolute right-4 md:right-8 rounded-full p-1 hover:opacity-80 transition z-20">
+          <button className=" absolute right-4 z-20 rounded-full bg-white bg-opacity-10 p-1 transition hover:opacity-80 md:right-8">
             <XMark />
           </button>
         </div>
       </div>
-      <div className="bg-grey-10 py-3.5 xl:py-5 border-y border-grey-15">
-        <nav className="flex items-center justify-between container">
+      <div className="border-y border-grey-15 bg-grey-10 py-3.5 xl:py-5">
+        <nav className="container flex items-center justify-between">
           <div className="shrink-0">
             <Link href="/">
-              <Image src={logo} alt="logo" className="w-23.5 h-7 md:w-40 md:h-12 dt:w-40 dt:h-12" width={160} height={48} />
+              <Image
+                src={logo}
+                alt="logo"
+                className="h-7 w-23.5 md:h-12 md:w-40 dt:h-12 dt:w-40"
+                width={160}
+                height={48}
+              />
             </Link>
           </div>
-          <div className="hidden md:flex items-center gap-[10px] lg:gap-[30px]">
+          <div className="hidden items-center gap-[10px] md:flex lg:gap-[30px]">
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about-us">About Us</NavLink>
             <NavLink href="/properties">Properties</NavLink>
             <NavLink href="/services">Services</NavLink>
           </div>
-          <CustomLink href="#" className="hidden md:block bg-grey-08 dt:py-[16px] dt:px-[24px] hover:opacity-80">
+          <CustomLink
+            href="#"
+            className="hidden bg-grey-08 hover:opacity-80 md:block dt:px-[24px] dt:py-[16px]"
+          >
             Contact Us
           </CustomLink>
-          <button className="md:hidden hover:opacity-80 transition">
+          <button className="transition hover:opacity-80 md:hidden">
             <HamburgerBurger />
           </button>
         </nav>

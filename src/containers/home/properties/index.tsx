@@ -5,14 +5,17 @@ import Image3 from "@images/buildings/image3.png";
 import SectionLayout from "@/components/SectionLayout";
 import CustomLink from "@/components/ui/CustomLink";
 import Image from "next/image";
+import SubParagraph from "@/components/ui/SubParagraph";
+import Paragraph from "@/components/ui/Paragraph";
 
 const Properties = () => {
   return (
     <SectionLayout
       key={1}
-      h1="Featured Properties"
-      p="Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click 'View Details' for more information."
-      btn="View All Properties"
+      heading="Featured Properties"
+      paragraph="Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click 'View Details' for more information."
+      linkLabel="View All Properties"
+      href="#"
     >
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-[20px] dt:gap[30px]">
         {PROPERTIES.slice(0, 3).map((p, idx) => (
@@ -59,12 +62,12 @@ const Card = ({ property: { title, desc, img, features, price } }: { property: P
       <div className="flex flex-col gap-6 dt:gap-[30px]">
         <div>
           <h4 className="font-semibold text-[20px] dt:text-[24px] mb-[6px]">{title}</h4>
-          <p className="font-medium text-[16px] dt:text-[18px] text-grey-60">
+          <Paragraph>
             {desc}{" "}
             <a href="#" className="text-white">
               Read More
             </a>
-          </p>
+          </Paragraph>
         </div>
         <div className="flex gap-[6px] dt:gap-2.5">
           {features.slice(0, 3).map((f, idx) => {
@@ -80,7 +83,7 @@ const Card = ({ property: { title, desc, img, features, price } }: { property: P
             <span className="text-grey-60 font-medium text-[14px] dt:text-[18px]">Price</span>
             <span className="font-semibold text-[20px] dt:text-[24px]">${price}</span>
           </div>
-          <CustomLink href="#" className="flex-[2] bg-purple-60">
+          <CustomLink href="#" variant="purple" className="flex-[2]">
             View Property Details
           </CustomLink>
         </div>

@@ -3,14 +3,17 @@ import SectionLayout from "@/components/SectionLayout";
 import Image from "next/image";
 import profile1 from "@images/profiles/profile1.png";
 import profile2 from "@images/profiles/profile2.png";
+import SubParagraph from "@/components/ui/SubParagraph";
+import Paragraph from "@/components/ui/Paragraph";
 
 const Testimonials = () => {
   return (
     <SectionLayout
       key={3}
-      h1="What Our Clients Say"
-      p="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
-      btn="View All Testimonials"
+      heading="What Our Clients Say"
+      paragraph="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
+      linkLabel="View All Testimonials"
+      href="#"
     >
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-[20px] dt:gap[30px] ">
         {TESTIMONIALS.slice(0, 3).map((t, idx) => (
@@ -53,19 +56,19 @@ const Card = ({ testimonial: { title, desc, authorName, authorImg, authorAddress
   return (
     <div className="odd:hidden md:odd:flex flex flex-col gap-[30px] dt:gap-[40px] border border-grey-15 rounded-base p-[40px] dt:p-[50px] justify-between">
       <div className="flex items-center gap-2 dt:gap-2.5">
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5">
+        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
           <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
         </div>
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5">
+        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
           <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
         </div>
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5">
+        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
           <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
         </div>
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5">
+        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
           <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
         </div>
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5">
+        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
           <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
         </div>
       </div>
@@ -79,7 +82,7 @@ const Card = ({ testimonial: { title, desc, authorName, authorImg, authorAddress
         </div>
         <div className="flex flex-col">
           <p className="font-medium text-[18px] dt:text-[20px]">{authorName}</p>
-          <p className="font-medium text-[16px] dt:text-[18px] text-grey-60">{authorAddress}</p>
+          <Paragraph>{authorAddress}</Paragraph>
         </div>
       </div>
     </div>

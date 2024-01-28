@@ -5,41 +5,30 @@ import abstractDesgin from "@images/abstract-designs/abstract-design-2.svg";
 import React from "react";
 import { Arrow, SVG1, SVG2, SVG3, SVG4 } from "@/components/SVGs";
 import CustomLink from "@/components/ui/CustomLink";
+import Statistics from "@/components/Statistics";
+import Paragraph from "@/components/ui/Paragraph";
 const Hero = () => {
   return (
-    <div className="flex flex-col overflow-hidden mb-[50px]">
+    <div className="flex flex-col overflow-hidden -mt-[50px] xl:-mt-[70px] dt:-mt-[100px]">
       <div className="grid grid-cols-1 md:grid-cols-2 content-center md:gap-15 dt:gap-20 container relative my-8 md:my-0">
         <div className="flex flex-col gap-15 justify-center order-2 md:order-1">
           <div className="flex flex-col gap-6">
             <h1 className="font-semibold text-[28px] sm:text-[36px] xl:text-[46px] dt:text-6xl leading-[1.2]">
               Discover Your Dream Property with Estatein
             </h1>
-            <p className="font-medium text-[14px] xl:text-base dt:text-lg text-grey-60">
+            <Paragraph className="font-medium text-[14px] xl:text-base dt:text-lg text-grey-60">
               Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.
-            </p>
+            </Paragraph>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-4 dt:gap-5">
             <CustomLink href="#" className="w-full md:w-fit">
               Learn More
             </CustomLink>
-            <CustomLink href="#" className="w-full md:w-fit bg-purple-60">
+            <CustomLink href="#" variant="purple">
               Browse Properties
             </CustomLink>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 dt:gap-5">
-            <div className="gap-[2px] flex flex-col items-center md:items-start bg-grey-10 rounded-xl border border-grey-15 p-4 md:p-3.5 dt:p-4">
-              <span className="font-bold text-2xl md:text-[30px] dt:text-[40px] leading-normal">200+</span>
-              <span className="font-medium text-grey-60 text-[14px] xl:text-base dt:text-lg leading-normal text-center">Happy Customers</span>
-            </div>
-            <div className="gap-[2px] flex flex-col items-center md:items-start bg-grey-10 rounded-xl border border-grey-15 p-4 md:p-3.5 dt:p-4">
-              <span className="font-bold text-2xl md:text-[30px] dt:text-[40px] leading-normal">10k+</span>
-              <span className="font-medium text-grey-60 text-[14px] xl:text-base dt:text-lg leading-normal text-center">Properties For Clients</span>
-            </div>
-            <div className="col-span-2 md:col-span-1 gap-[2px] flex flex-col items-center md:items-start bg-grey-10 rounded-xl border border-grey-15 p-4 md:p-3.5 dt:p-4">
-              <span className="font-bold text-2xl md:text-[30px] dt:text-[40px] leading-normal">16+</span>
-              <span className="font-medium text-grey-60 text-[14px] xl:text-base dt:text-lg leading-normal text-center">Years of Experience</span>
-            </div>
-          </div>
+          <Statistics />
         </div>
         <div className="mb-18 md:mb-0 relative h-[302px] md:min-h-[622px] dt:min-h-[814px] order-1 md:order-2 md:rounded-none rounded-xl overflow-hidden md:overflow-visible border border-grey-15 md:border-none">
           <div className="absolute left-0 right-0 translate-x-0 z-30 h-full md:w-[calc(50vw-30px)]">

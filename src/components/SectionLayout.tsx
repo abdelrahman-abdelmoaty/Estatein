@@ -1,32 +1,40 @@
 import React from "react";
-import { AbstractDesign, ArrowLeft, ArrowRight } from "./SVGs";
-import CustomLink from "./ui/CustomLink";
+import { ArrowLeft, ArrowRight } from "./SVGs";
+import SectionHeaderWithLink from "./ui/SectionHeaderWithLink";
 
-export default function SectionLayout({ h1, p, btn, children }: { h1: string; p: string; btn: string; children: React.ReactNode }) {
+export default function SectionLayout({
+  heading,
+  paragraph,
+  href,
+  linkLabel,
+  children,
+}: {
+  heading: string;
+  paragraph: string;
+  href: string;
+  linkLabel: string;
+  children: React.ReactNode;
+}) {
   return (
-    <div className="container py-[50px] relative z-20">
-      <div className="relative right-5 bottom-1.5">
-        <AbstractDesign />
-      </div>
-      <h1 className="font-semibold text-[28px] xl:text-[38px] dt:text-[48px] mb-2.5 dt:mb-3.5">{h1}</h1>
-      <div className="flex items-center justify-between mb-[40px] xl:mb-[60px] dt:mb-[80px]">
-        <p className="flex-1 text-grey-60 text-[14px] xl:text-[16px] dt:text-[18px] xl:max-w-[75%]">{p}</p>
-        <CustomLink href="#" className="hidden xl:block ">
-          {btn}
-        </CustomLink>
-      </div>
+    <div className="container relative z-20">
+      <SectionHeaderWithLink
+        heading={heading}
+        paragraph={paragraph}
+        linkLabel={linkLabel}
+        href={href}
+      />
       {children}
-      <hr className="border-grey-15 mt-[40px] mb-4 dt:mt-[50px] dt:mb-5" />
-      <div className="flex justify-between items-center">
-        <div className="order-2 xl:order-1 text-[14px] xl:text-[16px] dt:text-[20px]">
+      <hr className="mb-4 mt-[40px] border-grey-15 dt:mb-5 dt:mt-[50px]" />
+      <div className="flex items-center justify-between">
+        <div className="order-2 text-[14px] xl:order-1 xl:text-[16px] dt:text-[20px]">
           <span>01</span> <span className="text-grey-60">of 60</span>
         </div>
-        <div className="order-1 xl:order-2 flex items-center gap-2.5">
-          <button className="p-2.5 dt:p-3.5 rounded-full border border-grey-15">
-            <ArrowLeft className="w-6 h-6 dt:w-7.5 dt:h-7.5 text-grey-50" />
+        <div className="order-1 flex items-center gap-2.5 xl:order-2">
+          <button className="rounded-full border border-grey-15 p-2.5 dt:p-3.5">
+            <ArrowLeft className="h-6 w-6 text-grey-50 dt:h-7.5 dt:w-7.5" />
           </button>
-          <button className="p-2.5 dt:p-3.5 rounded-full border border-grey-15 bg-grey-10 hover:bg-grey-08 transition">
-            <ArrowRight className="w-6 h-6 dt:w-7.5 dt:h-7.5" />
+          <button className="rounded-full border border-grey-15 bg-grey-10 p-2.5 transition hover:bg-grey-08 dt:p-3.5">
+            <ArrowRight className="h-6 w-6 dt:h-7.5 dt:w-7.5" />
           </button>
         </div>
       </div>

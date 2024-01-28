@@ -15,7 +15,7 @@ const CTA = () => {
             properties or get in touch with our team for personalized assistance.
           </p>
         </div>
-        <CustomLink href="#" className="w-full sm:w-fit h-fit bg-purple-60">
+        <CustomLink href="#" className="">
           Explore Properties
         </CustomLink>
       </div>

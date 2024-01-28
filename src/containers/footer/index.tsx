@@ -1,92 +1,173 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@images/logo/logo.svg";
-import { FacebookIcon, LinkedinIcon, MailBox, PaperPlane, TwitterIcon, YoutubeIcon } from "@/components/SVGs";
-import FooterLink from "@/components/ui/FooterLink";
+import {
+  FacebookIcon,
+  LinkedinIcon,
+  MailBox,
+  PaperPlane,
+  TwitterIcon,
+  YoutubeIcon,
+} from "@/components/SVGs";
+import CustomLink from "@/components/ui/CustomLink";
 
 const Footer = () => {
   return (
     <div className="flex flex-col">
-      <div className="container flex flex-col sm:flex-row gap-[80px] py-[80px] dt:py-[100px]">
+      <div className="container flex flex-col gap-[80px] py-[80px] sm:flex-row dt:py-[100px]">
         <div className="flex flex-col gap-[16px] md:gap-[24px] dt:gap-[30px]">
           <div>
             <Link href="/">
-              <Image src={logo} alt="logo" className="w-23.5 h-7 md:w-40 md:h-12 dt:w-40 dt:h-12" width={160} height={48} />
+              <Image
+                src={logo}
+                alt="logo"
+                className="h-7 w-23.5 md:h-12 md:w-40 dt:h-12 dt:w-40"
+                width={160}
+                height={48}
+              />
             </Link>
           </div>
-          <div className="rounded-xl border border-grey-15 flex items-center gap-2.5 py-[14px] px-[20px] dt:py-[18px] dt:px-[24px] ">
-            <MailBox className="w-5 h-5 dt:w-6 dt:h-6" />
-            <input type="text" placeholder="Enter Your Email" className="flex-1 bg-transparent font-medium text-[14px] dt:text-[18px] outline-none" />
-            <PaperPlane className="w-6 h-6 dt:w-7.5 dt:h-7.5" />
+          <div className="flex items-center gap-2.5 rounded-xl border border-grey-15 px-[20px] py-[14px] dt:px-[24px] dt:py-[18px] ">
+            <MailBox className="h-5 w-5 dt:h-6 dt:w-6" />
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              className="flex-1 bg-transparent text-[14px] font-medium outline-none dt:text-[18px]"
+            />
+            <PaperPlane className="h-6 w-6 dt:h-7.5 dt:w-7.5" />
           </div>
         </div>
-        <div className="grid grid-cols-2 xl:grid-cols-5 flex-1 gap-5">
+        <div className="grid flex-1 grid-cols-2 gap-5 xl:grid-cols-5">
           <div className="flex flex-col gap-[16px] md:gap-[24px] dt:gap-[30px]">
-            <span className="font-medium text-[18px] dt:text-[20px] text-grey-60">Home</span>
-            <div className="flex flex-col gap-[8px] md:gap-[16px] dt:gap[20px]">
-              <FooterLink href="#">Hero Section</FooterLink>
-              <FooterLink href="#">Features</FooterLink>
-              <FooterLink href="#">Properties</FooterLink>
-              <FooterLink href="#">Testimonials</FooterLink>
-              <FooterLink href="#">FAQ&aposs</FooterLink>
+            <span className="text-[18px] font-medium text-grey-60 dt:text-[20px]">
+              Home
+            </span>
+            <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
+              <CustomLink href="#" variant="footer">
+                Hero Section
+              </CustomLink>
+              <CustomLink href="#" variant="footer">
+                Features
+              </CustomLink>
+              <CustomLink href="#" variant="footer">
+                Properties
+              </CustomLink>
+              <CustomLink href="#" variant="footer">
+                Testimonials
+              </CustomLink>
+              <CustomLink href="#" variant="footer">
+                FAQ&aposs
+              </CustomLink>
             </div>
           </div>
           <div className="flex flex-col gap-[16px] md:gap-[24px] dt:gap-[30px]">
-            <span className="font-medium text-[18px] dt:text-[20px] text-grey-60">About Us</span>
-            <div className="flex flex-col gap-[8px] md:gap-[16px] dt:gap[20px]">
-              <FooterLink href="#">Our Story</FooterLink>
-              <FooterLink href="#">Our Works</FooterLink>
-              <FooterLink href="#">How It Works</FooterLink>
-              <FooterLink href="#">Our Team</FooterLink>
-              <FooterLink href="#">Our Clients</FooterLink>
+            <span className="text-[18px] font-medium text-grey-60 dt:text-[20px]">
+              About Us
+            </span>
+            <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
+              <CustomLink href="#" variant="footer">
+                Our Story
+              </CustomLink>
+              <CustomLink href="#" variant="footer">
+                Our Works
+              </CustomLink>
+              <CustomLink href="#" variant="footer">
+                How It Works
+              </CustomLink>
+              <CustomLink href="#" variant="footer">
+                Our Team
+              </CustomLink>
+              <CustomLink href="#" variant="footer">
+                Our Clients
+              </CustomLink>
             </div>
           </div>
-          <div className="grid grid-row-2 xl:grid-row-1 grid-cols-2 xl:grid-cols-3 col-span-2 md:col-span-3 gap-5">
+          <div className="grid-row-2 xl:grid-row-1 col-span-2 grid grid-cols-2 gap-5 md:col-span-3 xl:grid-cols-3">
             <div className="flex flex-col gap-[16px] md:gap-[24px] dt:gap-[30px]">
-              <span className="font-medium text-[18px] dt:text-[20px] text-grey-60">Properties</span>
-              <div className="flex flex-col gap-[8px] md:gap-[16px] dt:gap[20px]">
-                <FooterLink href="#">Portfolio</FooterLink>
-                <FooterLink href="#">Categories</FooterLink>
+              <span className="text-[18px] font-medium text-grey-60 dt:text-[20px]">
+                Properties
+              </span>
+              <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
+                <CustomLink href="#" variant="footer">
+                  Portfolio
+                </CustomLink>
+                <CustomLink href="#" variant="footer">
+                  Categories
+                </CustomLink>
               </div>
             </div>
             <div className="row-span-2 flex flex-col gap-[16px] md:gap-[24px] dt:gap-[30px]">
-              <span className="font-medium text-[18px] dt:text-[20px] text-grey-60">Services</span>
-              <div className="flex flex-col gap-[8px] md:gap-[16px] dt:gap[20px]">
-                <FooterLink href="#">Valuation Mastery</FooterLink>
-                <FooterLink href="#">Strategic Marketing</FooterLink>
-                <FooterLink href="#">Negotiation Wizardry</FooterLink>
-                <FooterLink href="#">Closing Success</FooterLink>
-                <FooterLink href="#">Property Management</FooterLink>
+              <span className="text-[18px] font-medium text-grey-60 dt:text-[20px]">
+                Services
+              </span>
+              <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
+                <CustomLink href="#" variant="footer">
+                  Valuation Mastery
+                </CustomLink>
+                <CustomLink href="#" variant="footer">
+                  Strategic Marketing
+                </CustomLink>
+                <CustomLink href="#" variant="footer">
+                  Negotiation Wizardry
+                </CustomLink>
+                <CustomLink href="#" variant="footer">
+                  Closing Success
+                </CustomLink>
+                <CustomLink href="#" variant="footer">
+                  Property Management
+                </CustomLink>
               </div>
             </div>
             <div className="flex flex-col gap-[16px] md:gap-[24px] dt:gap-[30px]">
-              <span className="font-medium text-[18px] dt:text-[20px] text-grey-60">Contact Us</span>
-              <div className="flex flex-col gap-[8px] md:gap-[16px] dt:gap[20px]">
-                <FooterLink href="#">Contact Form</FooterLink>
-                <FooterLink href="#">Our Offices</FooterLink>
+              <span className="text-[18px] font-medium text-grey-60 dt:text-[20px]">
+                Contact Us
+              </span>
+              <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
+                <CustomLink href="#" variant="footer">
+                  Contact Form
+                </CustomLink>
+                <CustomLink href="#" variant="footer">
+                  Our Offices
+                </CustomLink>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="py-3 dt:py-4 bg-grey-10">
-        <div className="container flex flex-col md:flex-row items-center justify-between gap-5">
-          <div className="order-2 md:order-1 flex flex-col md:flex-row gap-[10px] md:gap-[20px] dt:gap-[38px] items-center">
-            <p className="font-medium text-[14px] xl:text-[16px] dt:text-[18px]">@2023 Estatein. All Rights Reserved.</p>
-            <FooterLink href="#">Terms & Conditions</FooterLink>
+      <div className="bg-grey-10 py-3 dt:py-4">
+        <div className="container flex flex-col items-center justify-between gap-5 md:flex-row">
+          <div className="order-2 flex flex-col items-center gap-[10px] md:order-1 md:flex-row md:gap-[20px] dt:gap-[38px]">
+            <p className="text-[14px] font-medium xl:text-[16px] dt:text-[18px]">
+              @2023 Estatein. All Rights Reserved.
+            </p>
+            <CustomLink href="#" variant="footer">
+              Terms & Conditions
+            </CustomLink>
           </div>
-          <div className="order-1 md:order-2 flex items-center gap-[8px] dt:gap-[10px]">
-            <a href="#" className="hover:opacity-80 transition p-[10px] dt:p-[14px] rounded-full bg-grey-08">
-              <FacebookIcon className="w-5 h-5 dt:w-6 dt:h-6" />
+          <div className="order-1 flex items-center gap-[8px] md:order-2 dt:gap-[10px]">
+            <a
+              href="#"
+              className="rounded-full bg-grey-08 p-[10px] transition hover:opacity-80 dt:p-[14px]"
+            >
+              <FacebookIcon className="h-5 w-5 dt:h-6 dt:w-6" />
             </a>
-            <a href="#" className="hover:opacity-80 transition p-[10px] dt:p-[14px] rounded-full bg-grey-08">
-              <LinkedinIcon className="w-5 h-5 dt:w-6 dt:h-6" />
+            <a
+              href="#"
+              className="rounded-full bg-grey-08 p-[10px] transition hover:opacity-80 dt:p-[14px]"
+            >
+              <LinkedinIcon className="h-5 w-5 dt:h-6 dt:w-6" />
             </a>
-            <a href="#" className="hover:opacity-80 transition p-[10px] dt:p-[14px] rounded-full bg-grey-08">
-              <TwitterIcon className="w-5 h-5 dt:w-6 dt:h-6" />
+            <a
+              href="#"
+              className="rounded-full bg-grey-08 p-[10px] transition hover:opacity-80 dt:p-[14px]"
+            >
+              <TwitterIcon className="h-5 w-5 dt:h-6 dt:w-6" />
             </a>
-            <a href="#" className="hover:opacity-80 transition p-[10px] dt:p-[14px] rounded-full bg-grey-08">
-              <YoutubeIcon className="w-5 h-5 dt:w-6 dt:h-6" />
+            <a
+              href="#"
+              className="rounded-full bg-grey-08 p-[10px] transition hover:opacity-80 dt:p-[14px]"
+            >
+              <YoutubeIcon className="h-5 w-5 dt:h-6 dt:w-6" />
             </a>
           </div>
         </div>
