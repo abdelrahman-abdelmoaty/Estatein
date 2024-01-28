@@ -3,7 +3,6 @@ import SectionLayout from "@/components/SectionLayout";
 import Image from "next/image";
 import profile1 from "@images/profiles/profile1.png";
 import profile2 from "@images/profiles/profile2.png";
-import SubParagraph from "@/components/ui/SubParagraph";
 import Paragraph from "@/components/ui/Paragraph";
 
 const Testimonials = () => {

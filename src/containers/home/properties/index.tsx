@@ -5,7 +5,6 @@ import Image3 from "@images/buildings/image3.png";
 import SectionLayout from "@/components/SectionLayout";
 import CustomLink from "@/components/ui/CustomLink";
 import Image from "next/image";
-import SubParagraph from "@/components/ui/SubParagraph";
 import Paragraph from "@/components/ui/Paragraph";
 
 const Properties = () => {
