@@ -19,7 +19,9 @@ const Clients = () => {
               <Paragraph>Since 2019</Paragraph>
               <Heading>ABC Corporation</Heading>
             </div>
-            <CustomLink href="#">View Website</CustomLink>
+            <CustomLink href="#" className="w-full">
+              View Website
+            </CustomLink>
           </div>
           <div className="flex gap-[20px] dt:gap-[30px]">
             <div className="flex-1">
@@ -57,7 +59,9 @@ const Clients = () => {
               <Paragraph>Since 2018</Paragraph>
               <Heading>GreenTech Enterprises</Heading>
             </div>
-            <CustomLink href="#">View Website</CustomLink>
+            <CustomLink href="#" className="w-full">
+              View Website
+            </CustomLink>
           </div>
           <div className="flex gap-[20px] dt:gap-[30px]">
             <div className="flex-1">
