@@ -15,7 +15,7 @@ const Testimonials = () => {
       linkLabel="View All Testimonials"
       href="#"
     >
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-[20px] dt:gap[30px] ">
+      <div className="dt:gap[30px] grid gap-[20px] md:grid-cols-2 xl:grid-cols-3 ">
         {TESTIMONIALS.slice(0, 3).map((t, idx) => (
           <Card key={idx} testimonial={t} />
         ))}
@@ -26,19 +26,25 @@ const Testimonials = () => {
 
 export default Testimonials;
 
-type Testimonial = { title: string; desc: string; authorImg: string; authorName: string; authorAddress: string };
+type Testimonial = {
+  title: string;
+  desc: string;
+  authorImg: string;
+  authorName: string;
+  authorAddress: string;
+};
 
 const TESTIMONIALS: Testimonial[] = [
   {
     title: "Exceptional Service!",
-    desc: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+    desc: "Our experience with Estatein was outstanding. Their team&apos;s dedication and professionalism made finding our dream home a breeze. Highly recommended!",
     authorImg: profile1.src,
     authorName: "Wade Warren",
     authorAddress: "USA, California",
   },
   {
     title: "Efficient and Reliable",
-    desc: "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
+    desc: "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn&apos;t be happier with the results.",
     authorImg: profile2.src,
     authorName: "Emelie Thomson",
     authorAddress: "USA, Florida",
@@ -52,36 +58,42 @@ const TESTIMONIALS: Testimonial[] = [
   },
 ];
 
-const Card = ({ testimonial: { title, desc, authorName, authorImg, authorAddress } }: { testimonial: Testimonial }) => {
+const Card = ({
+  testimonial: { title, desc, authorName, authorImg, authorAddress },
+}: {
+  testimonial: Testimonial;
+}) => {
   return (
-    <div className="odd:hidden md:odd:flex flex flex-col gap-[30px] dt:gap-[40px] border border-grey-15 rounded-base p-[40px] dt:p-[50px] justify-between">
+    <div className="flex flex-col justify-between gap-[30px] rounded-base border border-grey-15 p-[40px] odd:hidden md:odd:flex dt:gap-[40px] dt:p-[50px]">
       <div className="flex items-center gap-2 dt:gap-2.5">
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
-          <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
+        <div className="rounded-full border border-grey-15 p-[9px] text-[#FFE500] dt:p-2.5">
+          <Star className="h-4 w-4 dt:h-5 dt:w-5 " />
         </div>
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
-          <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
+        <div className="rounded-full border border-grey-15 p-[9px] text-[#FFE500] dt:p-2.5">
+          <Star className="h-4 w-4 dt:h-5 dt:w-5 " />
         </div>
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
-          <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
+        <div className="rounded-full border border-grey-15 p-[9px] text-[#FFE500] dt:p-2.5">
+          <Star className="h-4 w-4 dt:h-5 dt:w-5 " />
         </div>
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
-          <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
+        <div className="rounded-full border border-grey-15 p-[9px] text-[#FFE500] dt:p-2.5">
+          <Star className="h-4 w-4 dt:h-5 dt:w-5 " />
         </div>
-        <div className="rounded-full border border-grey-15 p-[9px] dt:p-2.5 text-[#FFE500]">
-          <Star className="w-4 h-4 dt:w-5 dt:h-5 " />
+        <div className="rounded-full border border-grey-15 p-[9px] text-[#FFE500] dt:p-2.5">
+          <Star className="h-4 w-4 dt:h-5 dt:w-5 " />
         </div>
       </div>
       <div>
-        <p className="font-semibold text-[20px] dt:text-[24px] mb-[10px] dt:mb-[14px]">{title}</p>
-        <p className="font-medium text-[16px] dt:text-[18px] ">{desc}</p>
+        <p className="mb-[10px] text-[20px] font-semibold dt:mb-[14px] dt:text-[24px]">
+          {title}
+        </p>
+        <p className="text-[16px] font-medium dt:text-[18px] ">{desc}</p>
       </div>
       <div className="flex gap-[10px] dt:gap-[12px]">
-        <div className="w-[50px] h-[50px] dt:w-[60px] dt:h-[60px] rounded-full relative">
+        <div className="relative h-[50px] w-[50px] rounded-full dt:h-[60px] dt:w-[60px]">
           <Image src={authorImg} alt={authorName} fill />
         </div>
         <div className="flex flex-col">
-          <p className="font-medium text-[18px] dt:text-[20px]">{authorName}</p>
+          <p className="text-[18px] font-medium dt:text-[20px]">{authorName}</p>
           <Paragraph>{authorAddress}</Paragraph>
         </div>
       </div>

@@ -33,7 +33,7 @@ const ExperienceCard = ({
       <div className="border-l border-purple-60 p-[16px] text-[16px] font-medium leading-normal dt:p-[20px] dt:text-[20px]">
         Step {id < 10 ? `0${id}` : id}
       </div>
-      <div className="relative flex flex-1 flex-col gap-[14px] rounded-r-xl rounded-bl-xl border border-grey-15 bg-[linear-gradient(121deg,#703BF7_-49.01%,rgba(112,59,247,0.00)_13.65%)] p-[30px] before:absolute before:left-[-1px] before:top-[-1px] before:z-40 before:h-[1px] before:w-1/2 before:bg-gradient-to-r before:from-purple-60 before:to-grey-15 before:content-[''] after:absolute after:left-[-1px] after:top-[-1px] after:z-40 after:h-1/2 after:w-[1px] after:bg-gradient-to-b after:from-purple-60 after:to-grey-15 after:content-[''] xl:gap-[16px] xl:p-[40px] dt:gap-[20px] dt:p-[50px]">
+      <div className="before:content-[''] after:content-[''] relative flex flex-1 flex-col gap-[14px] rounded-r-xl rounded-bl-xl border border-grey-15 bg-[linear-gradient(121deg,#703BF7_-49.01%,rgba(112,59,247,0.00)_13.65%)] p-[30px] before:absolute before:left-[-1px] before:top-[-1px] before:z-40 before:h-[1px] before:w-1/2 before:bg-gradient-to-r before:from-purple-60 before:to-grey-15 after:absolute after:left-[-1px] after:top-[-1px] after:z-40 after:h-1/2 after:w-[1px] after:bg-gradient-to-b after:from-purple-60 after:to-grey-15 xl:gap-[16px] xl:p-[40px] dt:gap-[20px] dt:p-[50px]">
         <Heading variant="large">{title}</Heading>
         <Paragraph>{desc}</Paragraph>
       </div>
@@ -45,12 +45,12 @@ const EXPERIENCES: Experience[] = [
   {
     id: 1,
     title: "Discover a World of Possibilities",
-    desc: "With over 3 years in the industry, we've amassed a wealth of knowledge and experience.Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location, type, size, and budget.",
+    desc: "With over 3 years in the industry, we&apos;ve amassed a wealth of knowledge and experience.Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location, type, size, and budget.",
   },
   {
     id: 2,
     title: "Narrowing Down Your Choices",
-    desc: "Once you've found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision.",
+    desc: "Once you&apos;ve found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision.",
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const EXPERIENCES: Experience[] = [
   {
     id: 4,
     title: "See It for Yourself",
-    desc: "Arrange viewings of the properties you're interested in. We'll coordinate with the property owners and accompany you to ensure you get a firsthand look at your potential new home.",
+    desc: "Arrange viewings of the properties you&apos;re interested in. We&apos;ll coordinate with the property owners and accompany you to ensure you get a firsthand look at your potential new home.",
   },
   {
     id: 5,
@@ -70,6 +70,6 @@ const EXPERIENCES: Experience[] = [
   {
     id: 6,
     title: "Getting the Best Deal",
-    desc: "We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms.",
+    desc: "We&apos;ll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms.",
   },
 ];

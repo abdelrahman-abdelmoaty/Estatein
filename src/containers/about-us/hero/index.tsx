@@ -16,7 +16,7 @@ const Hero = () => {
           <p className="text-[14px] font-medium text-grey-60 xl:text-[16px] dt:text-[18px]">
             Our story is one of continuous growth and evolution. We started as a
             small team with big dreams, determined to create a real estate
-            platform that transcended the ordinary. Over the years, we've
+            platform that transcended the ordinary. Over the years, we&apos;ve
             expanded our reach, forged valuable partnerships, and gained the
             trust of countless clients.
           </p>

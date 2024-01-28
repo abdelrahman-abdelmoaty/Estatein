@@ -56,7 +56,7 @@ const Footer = () => {
                 Testimonials
               </CustomLink>
               <CustomLink href="#" variant="footer">
-                FAQ&aposs
+                FAQ&apos;s
               </CustomLink>
             </div>
           </div>

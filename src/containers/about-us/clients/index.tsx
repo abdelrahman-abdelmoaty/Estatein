@@ -45,8 +45,8 @@ const Clients = () => {
           <div className="flex-1 rounded-xl border border-grey-15 p-[20px] xl:p-[24px] dt:p-[30px]">
             <Paragraph>What They Said 🤗</Paragraph>
             <Paragraph className="my-[10px] text-white dt:mt-[14px]">
-              Estatein's expertise in finding the perfect office space for our
-              expanding operations was invaluable. They truly understand our
+              Estatein&apos;s expertise in finding the perfect office space for
+              our expanding operations was invaluable. They truly understand our
               business needs.
             </Paragraph>
           </div>
@@ -83,8 +83,8 @@ const Clients = () => {
           <div className="flex-1 rounded-xl border border-grey-15 p-[20px] xl:p-[24px] dt:p-[30px]">
             <Paragraph>What They Said 🤗</Paragraph>
             <Paragraph className="my-[10px] text-white dt:mt-[14px]">
-              Estatein's ability to identify prime retail locations helped us
-              expand our brand presence. They are a trusted partner in our
+              Estatein&apos;s ability to identify prime retail locations helped
+              us expand our brand presence. They are a trusted partner in our
               growth.
             </Paragraph>
           </div>
