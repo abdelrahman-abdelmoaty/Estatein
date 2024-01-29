@@ -23,9 +23,9 @@ export default function RootLayout({
         className={`${urbanist.className} relative z-0 bg-grey-08 text-white`}
       >
         <Header />
-        <div className="my-[50px] flex flex-col gap-[80px] xl:my-[70px] xl:gap-[112px] dt:my-[100px] dt:gap-[140px]">
+        <main className="my-[50px] flex flex-col gap-[80px] xl:my-[70px] xl:gap-[112px] dt:my-[100px] dt:gap-[140px]">
           {children}
-        </div>
+        </main>
         <CTA />
         <Footer />
       </body>

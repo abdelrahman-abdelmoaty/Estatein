@@ -49,7 +49,7 @@ const Header = () => {
             <NavLink href="/services">Services</NavLink>
           </div>
           <CustomLink
-            href="#"
+            href="contact-us"
             className="hidden bg-grey-08 hover:opacity-80 md:block dt:px-[24px] dt:py-[16px]"
           >
             Contact Us

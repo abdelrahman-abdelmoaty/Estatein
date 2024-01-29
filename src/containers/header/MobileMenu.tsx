@@ -48,6 +48,12 @@ const MobileMenu = () => {
         >
           Services
         </a>
+        <a
+          href="/contact-us"
+          className="rounded-xl border-l-2 border-grey-15 p-3"
+        >
+          Contact Us
+        </a>
         <button
           className="absolute right-[20px] top-[20px]"
           onClick={handleHide}
