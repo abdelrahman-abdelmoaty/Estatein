@@ -14,6 +14,7 @@ const MobileMenu = () => {
   return (
     <>
       <button
+        aria-label="Open Menu"
         className="transition hover:opacity-80 md:hidden"
         onClick={handleShow}
       >
@@ -27,34 +28,43 @@ const MobileMenu = () => {
           },
         )}
       >
-        <a href="/" className="rounded-xl border-l-2 border-grey-15 p-3">
+        <a
+          href="/"
+          aria-label="home"
+          className="rounded-xl border-l-2 border-grey-15 p-3"
+        >
           Home
         </a>
         <a
           href="/about-us"
+          aria-label="about us"
           className="rounded-xl border-l-2 border-grey-15 p-3"
         >
           About Us
         </a>
         <a
           href="/properties"
+          aria-label="properties"
           className="rounded-xl border-l-2 border-grey-15 p-3"
         >
           Properties
         </a>
         <a
           href="/services"
+          aria-label="services"
           className="rounded-xl border-l-2 border-grey-15 p-3"
         >
           Services
         </a>
         <a
           href="/contact-us"
+          aria-label="contact us"
           className="rounded-xl border-l-2 border-grey-15 p-3"
         >
           Contact Us
         </a>
         <button
+          aria-label="Close Menu"
           className="absolute right-[20px] top-[20px]"
           onClick={handleHide}
         >

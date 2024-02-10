@@ -30,10 +30,16 @@ export default function SectionLayout({
           <span>01</span> <span className="text-grey-60">of 60</span>
         </div>
         <div className="order-1 flex items-center gap-2.5 xl:order-2">
-          <button className="rounded-full border border-grey-15 p-2.5 dt:p-3.5">
+          <button
+            aria-label="Previous Page Collection"
+            className="rounded-full border border-grey-15 p-2.5 dt:p-3.5"
+          >
             <ArrowLeft className="h-6 w-6 text-grey-50 dt:h-7.5 dt:w-7.5" />
           </button>
-          <button className="rounded-full border border-grey-15 bg-grey-10 p-2.5 transition hover:bg-grey-08 dt:p-3.5">
+          <button
+            aria-label="Next Page Collection"
+            className="rounded-full border border-grey-15 bg-grey-10 p-2.5 transition hover:bg-grey-08 dt:p-3.5"
+          >
             <ArrowRight className="h-6 w-6 dt:h-7.5 dt:w-7.5" />
           </button>
         </div>

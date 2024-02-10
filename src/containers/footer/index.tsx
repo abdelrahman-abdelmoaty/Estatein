@@ -147,24 +147,28 @@ const Footer = () => {
           <div className="order-1 flex items-center gap-[8px] md:order-2 dt:gap-[10px]">
             <a
               href="#"
+              aria-label="facebook"
               className="rounded-full bg-grey-08 p-[10px] transition hover:opacity-80 dt:p-[14px]"
             >
               <FacebookIcon className="h-5 w-5 dt:h-6 dt:w-6" />
             </a>
             <a
               href="#"
+              aria-label="linkedin"
               className="rounded-full bg-grey-08 p-[10px] transition hover:opacity-80 dt:p-[14px]"
             >
               <LinkedinIcon className="h-5 w-5 dt:h-6 dt:w-6" />
             </a>
             <a
               href="#"
+              aria-label="twitter"
               className="rounded-full bg-grey-08 p-[10px] transition hover:opacity-80 dt:p-[14px]"
             >
               <TwitterIcon className="h-5 w-5 dt:h-6 dt:w-6" />
             </a>
             <a
               href="#"
+              aria-label="youtube"
               className="rounded-full bg-grey-08 p-[10px] transition hover:opacity-80 dt:p-[14px]"
             >
               <YoutubeIcon className="h-5 w-5 dt:h-6 dt:w-6" />

@@ -24,7 +24,10 @@ const Header = () => {
           <div className="absolute left-0 top-1/2 z-10 h-[1046px] w-screen -translate-y-1/2 opacity-30 md:w-[1566px] dt:w-screen">
             <Image src={abstractDesgin} alt="abstract design" fill />
           </div>
-          <button className=" absolute right-4 z-20 rounded-full bg-white bg-opacity-10 p-1 transition hover:opacity-80 md:right-8">
+          <button
+            aria-label="Close Menu"
+            className="absolute right-4 z-20 rounded-full bg-white bg-opacity-10 p-1 transition hover:opacity-80 md:right-8"
+          >
             <XMark />
           </button>
         </div>

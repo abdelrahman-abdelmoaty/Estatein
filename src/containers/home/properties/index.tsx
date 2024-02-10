@@ -76,12 +76,16 @@ const Card = ({
       </div>
       <div className="flex flex-col gap-6 dt:gap-[30px]">
         <div>
-          <h4 className="mb-[6px] text-[20px] font-semibold dt:text-[24px]">
+          <h3 className="mb-[6px] text-[20px] font-semibold dt:text-[24px]">
             {title}
-          </h4>
+          </h3>
           <Paragraph>
             {desc}{" "}
-            <a href="#" className="text-white">
+            <a
+              href="#"
+              aria-label="Read More about the property"
+              className="text-white"
+            >
               Read More
             </a>
           </Paragraph>
