@@ -28,7 +28,13 @@ const Hero = () => {
           viewBox="0 0 755 546"
           className="absolute bottom-0 left-0 z-10 h-full w-full opacity-25"
         />
-        <Image src={hero2} alt="hero2" className="relative z-20" />
+        <Image
+          src={hero2}
+          alt="hero2"
+          className="relative z-20"
+          loading="eager"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
     </section>
   );
