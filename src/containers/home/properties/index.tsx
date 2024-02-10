@@ -84,7 +84,7 @@ const Card = ({
             <a
               href="#"
               aria-label="Read More about the property"
-              className="text-white"
+              className="text-white underline"
             >
               Read More
             </a>

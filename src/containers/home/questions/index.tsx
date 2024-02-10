@@ -57,7 +57,7 @@ const Card = ({
         {question}
       </p>
       <Paragraph>{answer}</Paragraph>
-      <CustomLink href={url} variant="dark">
+      <CustomLink href={url} variant="dark" className="underline">
         Read More
       </CustomLink>
     </div>
