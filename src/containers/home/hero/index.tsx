@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hero from "@images/hero/hero.webp";
+import hero from "@images/hero/hero.png";
 import badge from "@images/hero/badge.png";
 import abstractDesgin from "@images/abstract-designs/abstract-design-2.svg";
 import React from "react";
