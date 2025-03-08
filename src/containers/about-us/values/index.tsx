@@ -29,7 +29,8 @@ outline-grey-10 md:grid-cols-[1fr_1px_1fr] md:grid-rows-[1fr_1px_1fr] xl:gap-[24
             transaction.
           </Paragraph>
         </div>
-        <div className="border-l border-grey-15"></div>
+        <div className="hidden border-l border-grey-15 md:block"></div>
+        <hr className="border-grey-15 md:hidden" />
         <div className="flex flex-col gap-[14px] xl:gap-[16px] dt:gap-[20px]">
           <div className="items flex gap-[8px] xl:gap-[10px] dt:gap-[14px]">
             <Excellence className="h-[24px] w-[24px] text-purple-75 xl:h-[28px] xl:w-[28px] dt:h-[34px] dt:w-[34px]" />
@@ -40,7 +41,7 @@ outline-grey-10 md:grid-cols-[1fr_1px_1fr] md:grid-rows-[1fr_1px_1fr] xl:gap-[24
             the services we provide.
           </Paragraph>
         </div>
-        <hr className="col-span-3 border-grey-15" />
+        <hr className="border-grey-15 md:col-span-3" />
         <div className="flex flex-col gap-[14px] xl:gap-[16px] dt:gap-[20px]">
           <div className="items flex gap-[8px] xl:gap-[10px] dt:gap-[14px]">
             <ClientCentric className="h-[24px] w-[24px] text-purple-75 xl:h-[28px] xl:w-[28px] dt:h-[34px] dt:w-[34px]" />
@@ -51,7 +52,8 @@ outline-grey-10 md:grid-cols-[1fr_1px_1fr] md:grid-rows-[1fr_1px_1fr] xl:gap-[24
             understand.
           </Paragraph>
         </div>
-        <div className="border-l border-grey-15"></div>
+        <div className="hidden border-l border-grey-15 md:block"></div>
+        <hr className="border-grey-15 md:hidden" />
         <div className="flex flex-col gap-[14px] xl:gap-[16px] dt:gap-[20px]">
           <div className="items flex gap-[8px] xl:gap-[10px] dt:gap-[14px]">
             <Star className="h-[24px] w-[24px] text-purple-75 xl:h-[28px] xl:w-[28px] dt:h-[34px] dt:w-[34px]" />
