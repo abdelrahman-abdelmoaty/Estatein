@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Estatein - Modern Real Estate Frontend
 
-## Getting Started
+![image_original](https://github.com/user-attachments/assets/35df0a80-d911-4bd3-935f-3cbb4cb520b3)
 
-First, run the development server:
+Estatein is a sleek, responsive frontend for a real estate platform, showcasing modern design and seamless user experience. Built with **Next.js**, **React.js**, and **Tailwind CSS**, it features interactive UI components, optimized performance, and a polished aesthetic. Deployed on Vercel (`https://estatein-seven.vercel.app/`), it highlights best practices in responsive design, scalability, and deployment. Ideal for developers seeking inspiration or businesses needing a real estate solution.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js** - Framework for server-side rendering and static site generation  
+- **React.js** - Library for building interactive UI components  
+- **Tailwind CSS** - Utility-first CSS framework for rapid styling  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Responsive Design**: Adapts seamlessly across all devices  
+- **Interactive UI**: Includes property carousels, search filters, and modals  
+- **Performance Optimized**: Fast load times with modern optimization techniques  
+- **Modern Aesthetics**: Clean, professional design with subtle animations  
 
-## Learn More
+## Live Demo
 
-To learn more about Next.js, take a look at the following resources:
+Explore the deployed site: [https://estatein-seven.vercel.app/](https://estatein-seven.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image_original (2)](https://github.com/user-attachments/assets/055e1f3a-e960-4cc8-bcf1-72f8a6bc6159)
