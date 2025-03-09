@@ -1,33 +1,133 @@
-import React from "react";
+"use client";
+
+import React, { useCallback, useState } from "react";
 import Image1 from "@images/buildings/image1.png";
 import Image2 from "@images/buildings/image2.png";
 import Image3 from "@images/buildings/image3.png";
-import SectionLayout from "@/components/SectionLayout";
+import useEmblaCarousel from "embla-carousel-react";
 import CustomLink from "@/components/ui/CustomLink";
 import Image from "next/image";
 import Paragraph from "@/components/ui/Paragraph";
+import SectionHeaderWithLink from "@/components/ui/SectionHeaderWithLink";
+import { ArrowLeft, ArrowRight } from "@/components/SVGs";
+import Autoplay from "embla-carousel-autoplay";
 
 const Properties = () => {
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { loop: true, align: "start" },
+    [Autoplay()],
+  );
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) {
+      emblaApi.scrollPrev();
+      const index = emblaApi.selectedScrollSnap() + 1;
+      setCurrentIndex(index);
+    }
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) {
+      emblaApi.scrollNext();
+      const index = emblaApi.selectedScrollSnap() + 1;
+      setCurrentIndex(index);
+    }
+  }, [emblaApi]);
+
   return (
-    <SectionLayout
-      key={1}
-      heading="Featured Properties"
-      paragraph="Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click 'View Details' for more information."
-      linkLabel="View All Properties"
-      href="#"
-    >
-      <div className="dt:gap[30px] grid gap-[20px] sm:grid-cols-2 lg:grid-cols-3">
-        {PROPERTIES.slice(0, 3).map((p, idx) => (
-          <Card key={idx} property={p} />
-        ))}
+    <div className="container relative z-20">
+      <SectionHeaderWithLink
+        heading={"Featured Properties"}
+        paragraph={
+          "Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click 'View Details' for more information."
+        }
+        linkLabel={"View All Properties"}
+        href={"#"}
+      />
+      <div ref={emblaRef} className="overflow-hidden">
+        <div className="flex">
+          {PROPERTIES.map((p, idx) => (
+            <div key={idx + "card"} className="mr-4 min-w-0 flex-[0_0_32.5%]">
+              <Card property={p} />
+            </div>
+          ))}
+        </div>
       </div>
-    </SectionLayout>
+      <hr className="mb-4 mt-[40px] border-grey-15 dt:mb-5 dt:mt-[50px]" />
+      <div className="flex items-center justify-between">
+        <div className="order-2 text-[14px] xl:order-1 xl:text-[16px] dt:text-[20px]">
+          <span>{String(currentIndex).padStart(2, "0")}</span>{" "}
+          <span className="text-grey-60">
+            of {String(PROPERTIES.length).padStart(2, "0")}
+          </span>
+        </div>
+        <div className="order-1 flex items-center gap-2.5 xl:order-2">
+          <button
+            aria-label="Previous Page Collection"
+            className="rounded-full border border-grey-15 bg-grey-10 p-2.5 transition hover:bg-grey-08 dt:p-3.5"
+            onClick={scrollPrev}
+          >
+            <ArrowLeft className="h-6 w-6 dt:h-7.5 dt:w-7.5" />
+          </button>
+          <button
+            aria-label="Next Page Collection"
+            className="rounded-full border border-grey-15 bg-grey-10 p-2.5 transition hover:bg-grey-08 dt:p-3.5"
+            onClick={scrollNext}
+          >
+            <ArrowRight className="h-6 w-6 dt:h-7.5 dt:w-7.5" />
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 
 export default Properties;
 
 const PROPERTIES: Property[] = [
+  {
+    title: "Seaside Serenity Villa",
+    desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",
+    img: Image1.src,
+    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
+    price: 550000,
+  },
+  {
+    title: "Seaside Serenity Villa",
+    desc: "A chic fully-furnished 2-bedroom apartment with panoramic city views...",
+    img: Image2.src,
+    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
+    price: 550000,
+  },
+  {
+    title: "Seaside Serenity Villa",
+    desc: "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
+    img: Image3.src,
+    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
+    price: 550000,
+  },
+  {
+    title: "Seaside Serenity Villa",
+    desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",
+    img: Image1.src,
+    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
+    price: 550000,
+  },
+  {
+    title: "Seaside Serenity Villa",
+    desc: "A chic fully-furnished 2-bedroom apartment with panoramic city views...",
+    img: Image2.src,
+    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
+    price: 550000,
+  },
+  {
+    title: "Seaside Serenity Villa",
+    desc: "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
+    img: Image3.src,
+    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
+    price: 550000,
+  },
   {
     title: "Seaside Serenity Villa",
     desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",

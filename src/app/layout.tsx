@@ -9,7 +9,7 @@ const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Estatein",
-  description: "Developed by Abdelrahman Abdelmoaty",
+  description: "Discover Your Dream Property with Estatein.",
 };
 
 export default function RootLayout({
