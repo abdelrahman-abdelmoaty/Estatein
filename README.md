@@ -21,10 +21,4 @@ Estatein is a sleek, responsive frontend for a real estate platform, showcasing 
 
 Explore the deployed site: [https://estatein-seven.vercel.app/](https://estatein-seven.vercel.app/)
 
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/abdelrahman-abdelmoaty/Estatein.git
-
 ![image_original (2)](https://github.com/user-attachments/assets/055e1f3a-e960-4cc8-bcf1-72f8a6bc6159)
