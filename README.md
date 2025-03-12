@@ -6,17 +6,17 @@ Estatein is a sleek, responsive frontend for a real estate platform, showcasing 
 
 ## Tech Stack
 
-- **Next.js** - Framework for server-side rendering and static site generation  
-- **React.js** - Library for building interactive UI components  
-- **Tailwind CSS** - Utility-first CSS framework for rapid styling  
+- **Next.js** - Framework for server-side rendering and static site generation.  
+- **React.js** - Library for building interactive UI components.  
+- **Tailwind CSS** - Utility-first CSS framework for rapid styling.  
 
 ## Features
 
-- **Responsive Design**: Adapts seamlessly across all devices  
-- **Interactive UI**: Includes property carousels, search filters, and modals  
-- **Performance Optimized**: Fast load times with modern optimization techniques  
-- **Modern Aesthetics**: Clean, professional design with subtle animations  
-
+- **Responsive Design**: Adapts seamlessly across all devices.  
+- **Interactive UI**: Includes property carousels, search filters, and modals.  
+- **Performance Optimized**: Fast load times with modern optimization techniques.  
+- **Modern Aesthetics**: Clean, professional design with interactive carousels.
+  
 ## Live Demo
 
 Explore the deployed site: [https://estatein-seven.vercel.app/](https://estatein-seven.vercel.app/)
