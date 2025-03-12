@@ -1,6 +1,6 @@
 # Estatein - Modern Real Estate Frontend
 
-<img width="1699" alt="Screenshot 2025-03-12 at 6 00 37 AM" src="https://github.com/user-attachments/assets/25ecf646-7854-44e5-ab41-9184572fdb4f" />
+![s](https://github.com/user-attachments/assets/25ecf646-7854-44e5-ab41-9184572fdb4f)
 
 Estatein is a sleek, responsive frontend for a real estate platform, showcasing modern design and seamless user experience. Built with **Next.js**, **React.js**, and **Tailwind CSS**, it features interactive UI components, optimized performance, and a polished aesthetic. Deployed on Vercel (`https://estatein-seven.vercel.app/`), it highlights best practices in responsive design, scalability, and deployment. Ideal for developers seeking inspiration or businesses needing a real estate solution.
 
