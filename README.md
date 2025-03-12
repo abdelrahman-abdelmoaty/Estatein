@@ -13,7 +13,6 @@ Estatein is a sleek, responsive frontend for a real estate platform, showcasing 
 ## Features
 
 - **Responsive Design**: Adapts seamlessly across all devices.  
-- **Interactive UI**: Includes property carousels, search filters, and modals.  
 - **Performance Optimized**: Fast load times with modern optimization techniques.  
 - **Modern Aesthetics**: Clean, professional design with interactive carousels.
   
