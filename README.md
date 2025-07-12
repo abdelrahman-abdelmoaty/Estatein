@@ -1,6 +1,6 @@
 # 🏠 Estatein - Premium Real Estate Platform
 
-![Estatein Banner](https://github.com/user-attachments/assets/35df0a80-d911-4bd3-935f-3cbb4cb520b3)
+![s](https://github.com/user-attachments/assets/25ecf646-7854-44e5-ab41-9184572fdb4f)
 
 > A modern, sophisticated real estate platform built with Next.js 14, TypeScript, and Tailwind CSS. Features interactive carousels, responsive design, and premium UX.
 
