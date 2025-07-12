@@ -138,15 +138,6 @@ src/
 
 This project is created for portfolio demonstration purposes. All code and design implemented by Abdelrahman Abdelmoaty.
 
-## About
-
-**Developer**: Abdelrahman Abdelmoaty  
-**Project Link**: [https://github.com/yourusername/estatein](https://github.com/yourusername/estatein)
-
 ---
 
-⭐ If you found this project helpful, please give it a star on GitHub!
-
----
-
-*Built with passion by **Abdelrahman Abdelmoaty*** ✨
+*Built with passion by **Abdelrahman Abdelmoaty***
