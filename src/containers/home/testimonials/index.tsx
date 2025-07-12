@@ -35,17 +35,17 @@ const Testimonials = () => {
   }, [emblaApi]);
 
   return (
-    <div className="container relative z-20">
+    <section id="testimonials" className="container relative z-20">
       <SectionHeaderWithLink
         heading="What Our Clients Say"
         paragraph="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
         linkLabel="View All Testimonials"
-        href="#"
+        href="/about-us"
       />
       <div ref={emblaRef} className="overflow-hidden">
         <div className="flex">
           {TESTIMONIALS.map((t, idx) => (
-            <div key={idx} className="mr-4 h-full min-w-0 flex-[0_0_32.5%]">
+            <div key={idx} className="self-stretch mr-4 min-w-0 flex-[0_0_100%] md:flex-[0_0_50%] xl:flex-[0_0_32.5%]">
               <Card testimonial={t} />
             </div>
           ))}
@@ -76,7 +76,7 @@ const Testimonials = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -141,7 +141,7 @@ const Card = ({
   testimonial: Testimonial;
 }) => {
   return (
-    <div className="flex flex-col justify-between gap-[30px] rounded-base border border-grey-15 p-[40px] odd:hidden sm:odd:flex dt:gap-[40px] dt:p-[50px]">
+    <div className="h-full flex flex-col justify-between gap-[30px] rounded-base border border-grey-15 p-[40px] dt:gap-[40px] dt:p-[50px]">
       <div className="flex items-center gap-2 dt:gap-2.5">
         <div className="rounded-full border border-grey-15 p-[9px] text-[#FFE500] dt:p-2.5">
           <Star className="h-4 w-4 dt:h-5 dt:w-5 " />

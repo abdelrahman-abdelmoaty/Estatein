@@ -1,9 +1,6 @@
 "use client";
 
 import React, { useCallback, useState } from "react";
-import Image1 from "@images/buildings/image1.png";
-import Image2 from "@images/buildings/image2.png";
-import Image3 from "@images/buildings/image3.png";
 import useEmblaCarousel from "embla-carousel-react";
 import CustomLink from "@/components/ui/CustomLink";
 import Image from "next/image";
@@ -11,6 +8,7 @@ import Paragraph from "@/components/ui/Paragraph";
 import SectionHeaderWithLink from "@/components/ui/SectionHeaderWithLink";
 import { ArrowLeft, ArrowRight } from "@/components/SVGs";
 import Autoplay from "embla-carousel-autoplay";
+import { PROPERTIES, Property } from "@/data/properties";
 
 const Properties = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -36,19 +34,19 @@ const Properties = () => {
   }, [emblaApi]);
 
   return (
-    <div className="container relative z-20">
+    <div id="properties" className="container relative z-20">
       <SectionHeaderWithLink
         heading={"Featured Properties"}
         paragraph={
           "Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click 'View Details' for more information."
         }
         linkLabel={"View All Properties"}
-        href={"#"}
+        href={"/properties"}
       />
       <div ref={emblaRef} className="overflow-hidden">
         <div className="flex">
           {PROPERTIES.map((p, idx) => (
-            <div key={idx + "card"} className="mr-4 min-w-0 flex-[0_0_32.5%]">
+            <div key={idx + "card"} className="p-4 mr-4 min-w-0 self-stretch flex-[0_0_100%] md:flex-[0_0_50%] xl:flex-[0_0_32.5%]">
               <Card property={p} />
             </div>
           ))}
@@ -85,86 +83,13 @@ const Properties = () => {
 
 export default Properties;
 
-const PROPERTIES: Property[] = [
-  {
-    title: "Seaside Serenity Villa",
-    desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",
-    img: Image1.src,
-    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
-    price: 550000,
-  },
-  {
-    title: "Seaside Serenity Villa",
-    desc: "A chic fully-furnished 2-bedroom apartment with panoramic city views...",
-    img: Image2.src,
-    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
-    price: 550000,
-  },
-  {
-    title: "Seaside Serenity Villa",
-    desc: "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
-    img: Image3.src,
-    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
-    price: 550000,
-  },
-  {
-    title: "Seaside Serenity Villa",
-    desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",
-    img: Image1.src,
-    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
-    price: 550000,
-  },
-  {
-    title: "Seaside Serenity Villa",
-    desc: "A chic fully-furnished 2-bedroom apartment with panoramic city views...",
-    img: Image2.src,
-    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
-    price: 550000,
-  },
-  {
-    title: "Seaside Serenity Villa",
-    desc: "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
-    img: Image3.src,
-    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
-    price: 550000,
-  },
-  {
-    title: "Seaside Serenity Villa",
-    desc: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",
-    img: Image1.src,
-    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
-    price: 550000,
-  },
-  {
-    title: "Seaside Serenity Villa",
-    desc: "A chic fully-furnished 2-bedroom apartment with panoramic city views...",
-    img: Image2.src,
-    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
-    price: 550000,
-  },
-  {
-    title: "Seaside Serenity Villa",
-    desc: "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community...",
-    img: Image3.src,
-    features: ["4-Bedroom", "3-Bathrooms", "Villa"],
-    price: 550000,
-  },
-];
-
-type Property = {
-  title: string;
-  desc: string;
-  img: string;
-  features: string[];
-  price: number;
-};
 const Card = ({
-  property: { title, desc, img, features, price },
+  property: { id, title, desc, img, features, price },
 }: {
   property: Property;
 }) => {
   return (
-    <div className="rounded-xl border border-grey-15 p-[30px] odd:hidden sm:odd:block dt:p-10">
+    <div className="rounded-xl border border-grey-15 p-[30px] dt:p-10">
       <div className="relative mb-[16px] h-auto w-full xl:mb-[20px] dt:mb-[30px]">
         <Image
           src={img}
@@ -208,10 +133,10 @@ const Card = ({
               Price
             </span>
             <span className="text-[20px] font-semibold dt:text-[24px]">
-              ${price}
+              ${price.toLocaleString()}
             </span>
           </div>
-          <CustomLink href="#" variant="purple" className="flex-[2]">
+          <CustomLink href={`/property/${id}`} variant="purple" className="flex-[2]">
             View Property Details
           </CustomLink>
         </div>

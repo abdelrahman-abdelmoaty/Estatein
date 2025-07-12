@@ -5,7 +5,7 @@ import Paragraph from "@/components/ui/Paragraph";
 
 const Experience = () => {
   return (
-    <SectionLayout variant="col">
+    <SectionLayout variant="col" id="our-works">
       <SectionHeader
         heading="Navigating the Estatein Experience"
         paragraph="At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works."

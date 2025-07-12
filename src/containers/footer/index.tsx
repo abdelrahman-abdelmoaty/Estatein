@@ -43,20 +43,20 @@ const Footer = () => {
               Home
             </span>
             <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
-              <CustomLink href="#" variant="footer">
-                Hero Section
+              <CustomLink href="/#hero" variant="footer">
+                Dream Properties
               </CustomLink>
-              <CustomLink href="#" variant="footer">
-                Features
+              <CustomLink href="/#features" variant="footer">
+                Our Services
               </CustomLink>
-              <CustomLink href="#" variant="footer">
-                Properties
+              <CustomLink href="/#properties" variant="footer">
+                Featured Properties
               </CustomLink>
-              <CustomLink href="#" variant="footer">
-                Testimonials
+              <CustomLink href="/#testimonials" variant="footer">
+                Client Stories
               </CustomLink>
-              <CustomLink href="#" variant="footer">
-                FAQ&apos;s
+              <CustomLink href="/#questions" variant="footer">
+                FAQ
               </CustomLink>
             </div>
           </div>
@@ -65,20 +65,20 @@ const Footer = () => {
               About Us
             </span>
             <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
-              <CustomLink href="#" variant="footer">
-                Our Story
+              <CustomLink href="/about-us#our-story" variant="footer">
+                Our Journey
               </CustomLink>
-              <CustomLink href="#" variant="footer">
-                Our Works
+              <CustomLink href="/about-us#how-it-works" variant="footer">
+                Our Values
               </CustomLink>
-              <CustomLink href="#" variant="footer">
-                How It Works
+              <CustomLink href="/about-us#our-works" variant="footer">
+                Our Process
               </CustomLink>
-              <CustomLink href="#" variant="footer">
-                Our Team
+              <CustomLink href="/about-us#our-team" variant="footer">
+                Meet Our Team
               </CustomLink>
-              <CustomLink href="#" variant="footer">
-                Our Clients
+              <CustomLink href="/about-us#our-clients" variant="footer">
+                Client Testimonials
               </CustomLink>
             </div>
           </div>
@@ -88,11 +88,11 @@ const Footer = () => {
                 Properties
               </span>
               <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
-                <CustomLink href="#" variant="footer">
-                  Portfolio
+                <CustomLink href="/properties#portfolio" variant="footer">
+                  Property Portfolio
                 </CustomLink>
-                <CustomLink href="#" variant="footer">
-                  Categories
+                <CustomLink href="/properties#categories" variant="footer">
+                  Property Types
                 </CustomLink>
               </div>
             </div>
@@ -101,19 +101,19 @@ const Footer = () => {
                 Services
               </span>
               <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
-                <CustomLink href="#" variant="footer">
+                <CustomLink href="/services#valuation-mastery" variant="footer">
                   Valuation Mastery
                 </CustomLink>
-                <CustomLink href="#" variant="footer">
+                <CustomLink href="/services#strategic-marketing" variant="footer">
                   Strategic Marketing
                 </CustomLink>
-                <CustomLink href="#" variant="footer">
+                <CustomLink href="/services#negotiation-wizardry" variant="footer">
                   Negotiation Wizardry
                 </CustomLink>
-                <CustomLink href="#" variant="footer">
+                <CustomLink href="/services#closing-success" variant="footer">
                   Closing Success
                 </CustomLink>
-                <CustomLink href="#" variant="footer">
+                <CustomLink href="/services#property-management" variant="footer">
                   Property Management
                 </CustomLink>
               </div>
@@ -123,10 +123,10 @@ const Footer = () => {
                 Contact Us
               </span>
               <div className="dt:gap[20px] flex flex-col gap-[8px] md:gap-[16px]">
-                <CustomLink href="#" variant="footer">
+                <CustomLink href="/contact-us" variant="footer">
                   Contact Form
                 </CustomLink>
-                <CustomLink href="#" variant="footer">
+                <CustomLink href="/contact-us#our-offices" variant="footer">
                   Our Offices
                 </CustomLink>
               </div>

@@ -20,7 +20,7 @@ const CTA = () => {
             assistance.
           </p>
         </div>
-        <CustomLink href="#" className="">
+        <CustomLink href="/properties" className="">
           Explore Properties
         </CustomLink>
       </div>

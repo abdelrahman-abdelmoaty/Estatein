@@ -6,7 +6,7 @@ import { AbstractDesign, LinesAbstractDesign } from "@/components/SVGs";
 
 const Hero = () => {
   return (
-    <section className="container flex flex-col gap-[40px] md:flex-row xl:gap-[60px] dt:gap-[80px]">
+    <section id="our-story" className="container flex flex-col gap-[40px] md:flex-row xl:gap-[60px] dt:gap-[80px]">
       <div className="order-2 flex flex-1 flex-col gap-[40px] md:order-1 xl:gap-[50px] dt:gap-[80px]">
         <div>
           <AbstractDesignPositioned />

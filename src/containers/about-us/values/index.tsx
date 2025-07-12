@@ -7,7 +7,7 @@ import React from "react";
 
 const Values = () => {
   return (
-    <section className="container flex flex-col items-center gap-[40px] md:flex-row xl:gap-[60px] dt:gap-[80px]">
+    <section id="how-it-works" className="container flex flex-col items-center gap-[40px] md:flex-row xl:gap-[60px] dt:gap-[80px]">
       <div className="flex flex-1 flex-col gap-[40px] xl:gap-[50px] dt:gap-[80px]">
         <SectionHeader
           heading="Our Values"

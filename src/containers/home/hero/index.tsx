@@ -9,7 +9,7 @@ import Paragraph from "@/components/ui/Paragraph";
 import Features from "./Features";
 const Hero = () => {
   return (
-    <div className="-mt-[50px] flex flex-col overflow-hidden xl:-mt-[70px] dt:-mt-[100px]">
+    <section id="hero" className="-mt-[50px] flex flex-col overflow-hidden xl:-mt-[70px] dt:-mt-[100px]">
       <div className="container relative my-8 grid grid-cols-1 content-center md:my-0 md:grid-cols-2 md:gap-15 dt:gap-20">
         <div className="order-2 flex flex-col justify-center gap-15 md:order-1">
           <div className="flex flex-col gap-6">
@@ -22,10 +22,10 @@ const Hero = () => {
             </Paragraph>
           </div>
           <div className="flex flex-col items-center gap-4 md:flex-row dt:gap-5">
-            <CustomLink href="#" className="w-full md:w-fit">
+            <CustomLink href="/about-us" className="w-full md:w-fit">
               Learn More
             </CustomLink>
-            <CustomLink href="#" variant="purple">
+            <CustomLink href="/properties" variant="purple">
               Browse Properties
             </CustomLink>
           </div>
@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
       <Features />
-    </div>
+    </section>
   );
 };
 
