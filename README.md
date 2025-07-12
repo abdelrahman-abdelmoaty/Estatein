@@ -134,6 +134,10 @@ src/
 - **TypeScript**: Strict type checking enabled
 - **Component Organization**: Clear separation of concerns
 
+## License
+
+This project is created for portfolio demonstration purposes. All code and design implemented by Abdelrahman Abdelmoaty.
+
 ## About
 
 **Developer**: Abdelrahman Abdelmoaty  
@@ -142,3 +146,7 @@ src/
 ---
 
 ⭐ If you found this project helpful, please give it a star on GitHub!
+
+---
+
+*Built with passion by **Abdelrahman Abdelmoaty*** ✨
