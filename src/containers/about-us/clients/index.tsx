@@ -14,7 +14,7 @@ const Clients = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start" },
-    [Autoplay()],
+    // [Autoplay()],
   );
 
   const scrollPrev = useCallback(() => {
@@ -43,7 +43,7 @@ const Clients = () => {
           {CLIENTS.map((client, idx) => (
             <div
               key={idx}
-              className="mr-4 self-stretch min-w-0 flex-[0_0_100%] p-4 xl:flex-[0_0_50%]"
+              className="mr-4 min-w-0 flex-[0_0_100%] self-stretch p-4 xl:flex-[0_0_50%]"
             >
               <ClientCard client={client} />
             </div>

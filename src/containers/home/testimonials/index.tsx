@@ -15,7 +15,7 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start" },
-    [Autoplay()],
+    // [Autoplay()],
   );
 
   const scrollPrev = useCallback(() => {
@@ -45,7 +45,10 @@ const Testimonials = () => {
       <div ref={emblaRef} className="overflow-hidden">
         <div className="flex">
           {TESTIMONIALS.map((t, idx) => (
-            <div key={idx} className="self-stretch mr-4 min-w-0 flex-[0_0_100%] md:flex-[0_0_50%] xl:flex-[0_0_32.5%]">
+            <div
+              key={idx}
+              className="mr-4 min-w-0 flex-[0_0_100%] self-stretch md:flex-[0_0_50%] xl:flex-[0_0_32.5%]"
+            >
               <Card testimonial={t} />
             </div>
           ))}
@@ -141,7 +144,7 @@ const Card = ({
   testimonial: Testimonial;
 }) => {
   return (
-    <div className="h-full flex flex-col justify-between gap-[30px] rounded-base border border-grey-15 p-[40px] dt:gap-[40px] dt:p-[50px]">
+    <div className="flex h-full flex-col justify-between gap-[30px] rounded-base border border-grey-15 p-[40px] dt:gap-[40px] dt:p-[50px]">
       <div className="flex items-center gap-2 dt:gap-2.5">
         <div className="rounded-full border border-grey-15 p-[9px] text-[#FFE500] dt:p-2.5">
           <Star className="h-4 w-4 dt:h-5 dt:w-5 " />

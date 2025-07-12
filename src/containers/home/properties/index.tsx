@@ -14,7 +14,7 @@ const Properties = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start" },
-    [Autoplay()],
+    // [Autoplay()],
   );
 
   const scrollPrev = useCallback(() => {
@@ -120,7 +120,7 @@ const Card = ({
             return (
               <div
                 key={idx}
-                className="rounded-[28px] border border-grey-15 px-[14px] py-[6px] text-[14px] font-medium dt:py-[8px] dt:text-[18px]"
+                className="rounded-[28px] border border-grey-15 px-[14px] py-[6px] text-[12px] font-medium dt:py-[8px] dt:text-[16px]"
               >
                 {f}
               </div>
