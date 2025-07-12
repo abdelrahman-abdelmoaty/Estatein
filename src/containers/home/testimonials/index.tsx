@@ -15,7 +15,7 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start" },
-    // [Autoplay()],
+    [Autoplay()],
   );
 
   const scrollPrev = useCallback(() => {

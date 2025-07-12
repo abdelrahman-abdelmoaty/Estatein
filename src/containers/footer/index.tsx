@@ -140,8 +140,8 @@ const Footer = () => {
             <p className="text-[14px] font-medium xl:text-[16px] dt:text-[18px]">
               @2023 Estatein. All Rights Reserved.
             </p>
-            <CustomLink href="#" variant="footer">
-              Terms & Conditions
+            <CustomLink href="/privacy" variant="footer">
+              Privacy Policy
             </CustomLink>
           </div>
           <div className="order-1 flex items-center gap-[8px] md:order-2 dt:gap-[10px]">
