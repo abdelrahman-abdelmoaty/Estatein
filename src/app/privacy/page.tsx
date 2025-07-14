@@ -82,7 +82,7 @@ export default function PrivacyPage() {
             <div className="rounded-xl border border-grey-15 p-6">
               <Heading variant="small">Improvement & Analytics</Heading>
               <Paragraph className="mt-3">
-                We analyze usage patterns and feedback to improve our website, services, and user experience. This helps us better understand our clients' needs and preferences.
+                We analyze usage patterns and feedback to improve our website, services, and user experience. This helps us better understand our clients&apos; needs and preferences.
               </Paragraph>
             </div>
           </div>

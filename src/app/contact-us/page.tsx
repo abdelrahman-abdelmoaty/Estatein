@@ -6,7 +6,7 @@ import Paragraph from "@/components/ui/Paragraph";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Features from "@/containers/home/hero/Features";
 
-const page = () => {
+const Page = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -235,4 +235,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

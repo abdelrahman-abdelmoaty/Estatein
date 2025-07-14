@@ -16,7 +16,7 @@ const FAQPage = () => {
         <div className="container">
           <Heading>Frequently Asked Questions</Heading>
           <Paragraph className="xl:max-w-[80%]">
-            Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.
+            Find answers to common questions about Estatein&apos;s services, property listings, and the real estate process. We&apos;re here to provide clarity and assist you every step of the way.
           </Paragraph>
         </div>
       </div>

@@ -136,7 +136,7 @@ src/
 
 ## License
 
-This project is created for portfolio demonstration purposes. All code and design implemented by Abdelrahman Abdelmoaty.
+This project is created for portfolio demonstration purposes. All code implemented by Abdelrahman Abdelmoaty.
 
 ---
 

@@ -89,7 +89,7 @@ const page = () => {
         <div>
           <Heading>Negotiation Wizardry</Heading>
           <Paragraph>
-            Expert negotiation skills to secure the best deals, whether you're buying, selling, or investing in real estate. Our experienced negotiators protect your interests and maximize value in every transaction.
+            Expert negotiation skills to secure the best deals, whether you&apos;re buying, selling, or investing in real estate. Our experienced negotiators protect your interests and maximize value in every transaction.
           </Paragraph>
         </div>
         <div className="grid gap-[30px] md:grid-cols-2 xl:grid-cols-3 dt:gap-[40px]">
